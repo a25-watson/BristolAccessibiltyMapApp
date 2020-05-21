@@ -4,14 +4,39 @@ import mapboxgl from 'mapbox-gl';
 
 mapboxgl.accessToken = 'pk.eyJ1Ijoic3RlYWx0aDk2IiwiYSI6ImNrOHdpZXJzeTAybG4zZm83c3Bhem1ieXEifQ.QLDnXvW8CNXiWXFOtxrN_Q';
 
+var unirest = require('unirest');
+var express = require('express');
+var app = express();
+
+app.get('/', function(req, res){
+unirest.get("https://community-open-weather-map.p.rapidapi.com/weather")
+  .header("X-RapidAPI-Key", <27eb9c758emshe4450f6d1a50d2bp19dd82jsnea9b14c47f1c>)
+  .header("x-rapidapi-host", "community-open-weather-map.p.rapidapi.com")
+  .query({
+      'appid': <YOUR_APP_ID>,
+      'lon': '12.4924',
+      'lat': '41.8902',
+      'units': 'metric',
+      'mode': 'html'
+  })
+  .end(function (result) {
+      res.writeHead(200, {"Content-Type": "text/html"});
+      res.write(result.body);
+      console.log('Colosseum, I am coming!');
+  });
+})
+app.listen(8081, function(){
+  console.log('Server running at https://127.0.0.1:8081/');
+})
+
 class Application extends React.Component 
 {
 	constructor(props) {
 	super(props);
 		this.state = {
-			lng: 5,
-			lat: 34,
-			zoom: 2
+			lng: -2.5495,
+			lat: 51.5009,
+			zoom: 15.5
 			};
 	}
 	 
