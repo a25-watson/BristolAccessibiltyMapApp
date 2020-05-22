@@ -1,9 +1,10 @@
 .sidebarStyle {
 display: inline-block;
-position: absolute;
 top: 0;
 left: 0;
-margin: 12px;
+margin-top: 0%;
+margin-left: 0%;
+margin: px;
 background-color: #404040;
 color: #ffffff;
 z-index: 1 !important;
@@ -12,18 +13,54 @@ font-weight: bold;
 }
 
 .mapContainer {
-  position: center;
-  margin-top: 20%;
-  margin-left: 30%;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  width: 800px;
+  width: 80%;
   height: 800px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 20px solid #f1f1f1;
+  padding: 5px;
 }
 
-h1 {
-color: blue;
-position: center;
-margin-left: 50%;
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding-top: 15px;
+  padding-right: 0px;
 }
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the header */
+.lowerheader {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+  text-align: center;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+  
