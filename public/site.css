@@ -1,3 +1,14 @@
+/** <!--
+// Name: Aiden John Watson
+// Date: 01/05/2020
+// Application: BristolAccessibilityMapApp
+// Class: site.css
+
+// This is the site.css giving style parameters for the html web page items.
+// --!>
+*/
+
+/* Stylr for the lat, lng andd zoom info bar */
 .sidebarStyle {
 display: inline-block;
 top: 0;
@@ -12,6 +23,7 @@ padding: 6px;
 font-weight: bold;
 }
 
+/* Style for the map container */
 .mapContainer {
   width: 80%;
   height: 800px;
@@ -36,7 +48,7 @@ font-weight: bold;
   text-align: center;
 }
 
-/* Style the header */
+/* Style for the header */
 .lowerheader {
   background-color: #f1f1f1;
   padding: 20px;

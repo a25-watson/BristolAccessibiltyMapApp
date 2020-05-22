@@ -1,10 +1,23 @@
+<!--
+// Name: Aiden John Watson
+// Date: 01/05/2020
+// Application: BristolAccessibilityMapApp
+// Class: Map.js
+
+// This is the Map.js page for my dissertation project of Accessibility in the urban environment. this react class
+// describes the map solution for the application.
+// -->
+
 <!DOCTYPE html>
 <html lang='en'>
 <head>
 <title>Mapbox GL JS and React</title>
   <meta charset='utf-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
+  
+<!-- Link to the map style held on the MapBox server -->
   <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.css' rel='stylesheet' />
+<!-- assign style sheet css to html -->
   <link href='site.css' rel='stylesheet'/>
 </head>
 
@@ -13,15 +26,18 @@
 </head>
 <body>
 
+<!-- The header div -->
 <div class="header">
   <h1>Bristol Accessibility Map</h1>
   <p>Giving accessible mapping information on urban areas</p>
 </div>
 
+<!-- one of the left or right div's -->
 <div class="row">
   <div class="column side">
-  </div>
+</div>
   
+<!-- The center div containing the description of the map and map itself  -->
 <div class="column middle">
   <p>Getting information through geocrowdsourced data from Openstreetmaps and map styling through MapBox, this solution shows the best and safest routes through urban areas
 currently being prototyped at the University of the West of England.</p>
@@ -30,11 +46,10 @@ currently being prototyped at the University of the West of England.</p>
   <h2/>
 </div>
   
+<!-- one of the left or right div's -->
 <div class="column side">
   </div>
 </div>
-  
-</body>
 
 </body>
 </html>
